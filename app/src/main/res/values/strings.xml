@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Election Candidates</string>
+    <string-array name="countries">
+        <item>Australia</item>
+        <item>Pakistan</item>
+        <item>New Zeland</item>
+        <item>China</item>
+        <item>Iran</item>
+        <item>Afghanistan</item>
+    </string-array>
+</resources>

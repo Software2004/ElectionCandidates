@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/l1"
+        style="@style/imgLL">
+
+        <ImageView
+            android:id="@+id/profile_imageAct1"
+            style="@style/cirImg" />
+
+        <ImageView
+            android:id="@+id/ivCheck1"
+            style="@style/ivCheck" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/progbarImgUp"
+        android:visibility="gone"/>
+</RelativeLayout>

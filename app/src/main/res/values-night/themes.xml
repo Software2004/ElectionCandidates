@@ -1,0 +1,20 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.ElectionCandidates" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/brand_alt</item>
+        <item name="backgroundColor">@color/backColor_alt</item>
+        <item name="android:windowBackground">?backgroundColor</item>
+        <item name="colorOnBackground">@color/texColor_alt</item>
+        <item name="android:textColor">@color/texColor_alt</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:statusBarColor">?backgroundColor</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="fontFamily">@font/poppins</item>
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="cardBackgroundColor">#111</item>
+        <item name="colorSecondaryContainer">@color/brand</item>
+
+    </style>
+</resources>

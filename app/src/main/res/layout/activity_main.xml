@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:orientation="vertical">
+
+            <RelativeLayout
+
+                android:id="@+id/imgLay"
+                android:clickable="true"
+                android:focusable="true"
+                    android:layout_width="100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginVertical="20dp"
+                    android:layout_height="100dp">
+
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        app:shapeAppearance="@style/ShapeAppearance.Material3.Corner.Full"
+                        app:strokeWidth="1dp"
+                        app:contentPadding="20dp"
+                        android:id="@+id/ivProfilePic"
+                        style="@style/cirImg"/>
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/ivCheck1"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        app:shapeAppearance="@style/ShapeAppearance.Material3.Corner.ExtraSmall"
+                        android:background="?colorOnBackground"
+                        app:contentPadding="5dp"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/camera"/>
+                    <ProgressBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:visibility="gone"
+                        android:id="@+id/pbar1"/>
+                </RelativeLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/tiLayout">
+            <EditText
+                android:drawableStart="@drawable/user_1_"
+                style="@style/etLayout"
+                android:id="@+id/etCandidateName"
+                android:hint="Candidate Name"
+                android:inputType="textPersonName"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/tiLayout">
+            <EditText
+                style="@style/etLayout"
+                android:drawableStart="@drawable/credit_card"
+                android:id="@+id/etCnic"
+                android:hint="CNIC"
+                android:inputType="number"
+                android:maxLength="13"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/tiLayout">
+            <EditText
+                style="@style/etLayout"
+                android:drawableStart="@drawable/people_poll"
+                android:id="@+id/etParty"
+                android:hint="Party Name"
+                android:inputType="textPersonName"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+            <TextView
+                android:id="@+id/candi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:text=" Candidate Type: "
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rbNationalAssembly"
+                    android:text="National Assembly"/>
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rbProvincialAssembly"
+                    android:text="Provincial Assembly"/>
+            </RadioGroup>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/tiLayout">
+            <EditText
+                style="@style/etLayout"
+                android:drawableStart="@drawable/hastag"
+                android:id="@+id/etElectoralAreaNo"
+                android:hint="Electoral Area Number"
+                android:inputType="number"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/tiLayout">
+            <EditText
+                style="@style/etLayout"
+                android:layout_height="100dp"
+                android:id="@+id/etDetail"
+                android:gravity="start"
+                android:hint="Detail..."
+                android:inputType="textMultiLine"
+                android:maxLines="5"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnUploadData"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:textAllCaps="false"
+            android:layout_marginVertical="20dp"
+            android:textStyle="normal"
+            android:text="Upload Candidate Details" />
+    </LinearLayout>
+
+        </ScrollView>
+
+
+
+
+
+</FrameLayout>
+
+
+
+
+<!--
+ <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/recyView"/>
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/baseline_add_circle_24"
+                android:clickable="true"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="TOGO"
+                android:id="@+id/ivMore"/>
+
+        </RelativeLayout>
+
+
+-->

@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "531185792143",
+    "firebase_url": "https://e-voting-2e59d-default-rtdb.firebaseio.com",
+    "project_id": "e-voting-2e59d",
+    "storage_bucket": "e-voting-2e59d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:531185792143:android:1e892d1c87dfcaee5b6cfa",
+        "android_client_info": {
+          "package_name": "com.example.e_voting"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCw3ITNuHIfh52mypnr9Zv3pYStW3EWUKc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:531185792143:android:36297ace112f68825b6cfa",
+        "android_client_info": {
+          "package_name": "com.example.electioncandidates"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCw3ITNuHIfh52mypnr9Zv3pYStW3EWUKc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

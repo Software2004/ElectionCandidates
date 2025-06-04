@@ -1,0 +1,63 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.ElectionCandidates" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/brand</item>
+        <item name="backgroundColor">@color/backColor</item>
+        <item name="android:windowBackground">?backgroundColor</item>
+        <item name="colorOnBackground">@color/textColor</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:statusBarColor">?backgroundColor</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="fontFamily">@font/poppins</item>
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="cardBackgroundColor">#e9e9e9</item>
+    </style>
+
+    <style name="Theme.GHUploaderTester" parent="Base.Theme.ElectionCandidates" />
+    <style name="tiLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">5dp</item>
+    </style>
+    <style name="etLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:background">@null</item>
+        <item name="android:drawablePadding">15dp</item>
+    </style>
+    <style name="imgLL">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="cirImg">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:src">@drawable/user</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:contentDescription">@string/img</item>
+    </style>
+    <style name="ivCheck">
+        <item name="android:layout_width">25dp</item>
+        <item name="android:layout_height">25dp</item>
+        <item name="android:visibility">visible</item>
+
+        <item name="android:src">@drawable/camera</item>
+    </style>
+    <style name="pbar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+    <string name="img">img</string>
+
+</resources>
